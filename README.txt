@@ -1,22 +1,43 @@
-PHASE TWO — COMPLETE PACKAGE
+CHRIS DYKSTRA WEBSITE — PHASE FOUR
 
-Why you did not see changes:
-The first Phase Two package mainly replaced resources.html and added new checklist pages.
-The homepage itself was not changed enough to make that obvious.
+WHAT PHASE FOUR ADDS
+--------------------
+- Website Disclaimer page
+- Updated Privacy Policy
+- Terms of Use
+- Legal links in site footers
+- robots.txt
+- sitemap.xml
+- Custom 404 page
+- SEO-friendly canonical URLs and metadata on the new legal pages
+- Styling for all legal pages
 
-This corrected package includes the Version 5.1 homepage plus all Phase Two files.
-
-Visible homepage changes:
-- The Resources navigation link now opens resources.html.
-- The homepage Resource Center section now includes a “Visit Resource Center” button.
-- The footer Resources link opens resources.html.
-
-INSTALL:
+INSTALL
+-------
 1. Back up your current repository.
-2. Copy every file from this package into the repository root.
+2. Copy every file from this package into the root of your GitHub repository.
 3. Choose Replace when prompted.
-4. Open index.html in Live Server.
-5. Click Resources in the top navigation.
-6. Confirm the dedicated Resource Center opens.
-7. Test all three checklist pages.
-8. Commit and push with GitHub Desktop after review.
+4. Open index.html with Live Server.
+5. Test these pages:
+   - disclaimer.html
+   - privacy.html
+   - terms.html
+   - resources.html
+   - thank-you.html
+   - 404.html
+6. Confirm the footer links work.
+7. Commit and push through GitHub Desktop.
+
+GOOGLE SEARCH CONSOLE
+---------------------
+After publishing:
+1. Add chrisdykstratax.com as a Domain property in Google Search Console.
+2. Verify ownership through the DNS TXT record Google provides.
+3. Submit this sitemap:
+   https://chrisdykstratax.com/sitemap.xml
+4. Request indexing for the homepage and Resource Center.
+
+LEGAL NOTE
+----------
+These pages are general website language and are not a substitute for legal advice.
+Review them with a licensed attorney if you need state-specific or business-specific legal guidance.

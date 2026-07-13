@@ -1380,3 +1380,221 @@ textarea {
   margin: 0;
   color: var(--muted);
 }
+
+
+/* Phase Three: Formspree contact form */
+.optional {
+  color: rgba(255,255,255,0.58);
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
+.honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+.consent-row {
+  display: grid !important;
+  grid-template-columns: 22px 1fr;
+  gap: 10px !important;
+  align-items: start;
+  color: rgba(255,255,255,0.78);
+  font-weight: 500 !important;
+  line-height: 1.45;
+}
+
+.consent-row input {
+  width: 17px !important;
+  height: 17px;
+  margin-top: 3px;
+  accent-color: var(--gold-400);
+}
+
+.form-status {
+  min-height: 1.4em;
+  margin: 0;
+  color: rgba(255,255,255,0.82);
+  font-size: 0.86rem;
+}
+
+.form-status.error {
+  color: #ffd0d0;
+}
+
+.contact-form.is-submitting button[type="submit"] {
+  opacity: 0.72;
+  cursor: wait;
+}
+
+.thank-you-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 36px 0;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 80% 18%, rgba(211,179,111,0.18), transparent 30%),
+    linear-gradient(135deg, var(--navy-950), var(--navy-800));
+}
+
+.thank-you-card {
+  width: min(calc(100% - 32px), 720px);
+  padding: 48px;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.thank-you-mark {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  place-items: center;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  color: var(--navy-950);
+  background: var(--gold-400);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.thank-you-card h1 {
+  margin: 0;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 4.4rem);
+  line-height: 1.02;
+}
+
+.thank-you-card p {
+  color: rgba(255,255,255,0.76);
+}
+
+.thank-you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+@media (max-width: 680px) {
+  .thank-you-card {
+    padding: 32px 24px;
+  }
+
+  .thank-you-actions {
+    display: grid;
+  }
+}
+
+
+/* Phase Four: legal pages and SEO support */
+.legal-page {
+  min-height: 70vh;
+  padding: 88px 0;
+  background: var(--blue-50);
+}
+
+.legal-container {
+  width: min(calc(100% - 40px), 900px);
+  padding: 50px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.legal-container h1 {
+  margin: 0;
+  color: var(--navy-900);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.legal-effective {
+  margin: 14px 0 34px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.legal-container section {
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+}
+
+.legal-container section:first-of-type {
+  border-top: 0;
+}
+
+.legal-container h2 {
+  margin: 0 0 10px;
+  color: var(--navy-900);
+  font-size: 1.28rem;
+}
+
+.legal-container p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.legal-container a {
+  color: var(--navy-700);
+  font-weight: 650;
+}
+
+.legal-contact {
+  display: grid;
+  gap: 4px;
+  margin-top: 28px;
+  padding: 22px;
+  border-left: 4px solid var(--gold-500);
+  background: var(--blue-50);
+}
+
+.legal-contact strong {
+  color: var(--navy-900);
+}
+
+.legal-footer {
+  align-items: center;
+}
+
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.legal-links a {
+  color: rgba(255,255,255,0.76);
+  text-decoration: none;
+}
+
+.legal-links a:hover {
+  color: var(--white);
+}
+
+@media (max-width: 680px) {
+  .legal-page {
+    padding: 48px 0;
+  }
+
+  .legal-container {
+    width: min(calc(100% - 20px), 900px);
+    padding: 28px 22px;
+  }
+
+  .legal-footer,
+  .legal-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
