@@ -1,23 +1,22 @@
-CHRIS DYKSTRA WEBSITE — VERSION 5.1
+PHASE TWO — COMPLETE PACKAGE
 
-Changes:
-- LinkedIn icon added to the header
-- “Connect on LinkedIn” button added to the hero
-- LinkedIn profile added to the contact section
-- LinkedIn link added to the footer
-- Headshot display increased slightly
-- Service-card hover treatment refined
-- Official EA logo remains unaltered and is only resized
+Why you did not see changes:
+The first Phase Two package mainly replaced resources.html and added new checklist pages.
+The homepage itself was not changed enough to make that obvious.
+
+This corrected package includes the Version 5.1 homepage plus all Phase Two files.
+
+Visible homepage changes:
+- The Resources navigation link now opens resources.html.
+- The homepage Resource Center section now includes a “Visit Resource Center” button.
+- The footer Resources link opens resources.html.
 
 INSTALL:
-1. Back up your current index.html and styles.css.
-2. Copy index.html and styles.css into the root of your GitHub repository.
+1. Back up your current repository.
+2. Copy every file from this package into the repository root.
 3. Choose Replace when prompted.
-4. Keep script.js, chris-dykstra-headshot.png, ea_bw_050118.jpg,
-   professional-profile.pdf, and your article files in the root folder.
-5. Open index.html with Live Server and press Ctrl+F5.
-6. Test every LinkedIn link.
-7. When satisfied, commit and push with GitHub Desktop.
-
-LinkedIn profile:
-https://www.linkedin.com/in/chrisdykstra/
+4. Open index.html in Live Server.
+5. Click Resources in the top navigation.
+6. Confirm the dedicated Resource Center opens.
+7. Test all three checklist pages.
+8. Commit and push with GitHub Desktop after review.

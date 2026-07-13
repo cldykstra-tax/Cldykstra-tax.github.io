@@ -1079,3 +1079,304 @@ textarea {
 .card-number {
   transition: transform 0.25s ease;
 }
+
+
+/* Phase Two: Resource Center */
+.resource-hero {
+  padding: 88px 0;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 18%, rgba(211,179,111,0.18), transparent 28%),
+    linear-gradient(135deg, var(--navy-950), var(--navy-800));
+}
+
+.resource-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.resource-hero h1,
+.print-header h1,
+.article-container h1 {
+  margin: 0;
+  font-family: "Source Serif 4", Georgia, serif;
+  letter-spacing: -0.025em;
+}
+
+.resource-hero h1 {
+  max-width: 760px;
+  font-size: clamp(2.8rem, 5.5vw, 5rem);
+  line-height: 1;
+}
+
+.resource-hero p {
+  color: rgba(255,255,255,0.76);
+}
+
+.resource-hero-card {
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-md);
+}
+
+.resource-hero-card strong {
+  font-size: 1.2rem;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.download-card {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.download-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 14px;
+  color: var(--white);
+  background: var(--navy-900);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.download-card h3 {
+  margin: 20px 0 10px;
+  color: var(--navy-900);
+}
+
+.download-card p {
+  color: var(--muted);
+}
+
+.outline-button {
+  border: 1px solid var(--navy-900);
+  color: var(--navy-900);
+  background: transparent;
+}
+
+.newsletter-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 36px;
+  border-left: 5px solid var(--gold-500);
+  border-radius: 16px;
+  background: var(--blue-50);
+}
+
+.newsletter-panel h2 {
+  margin: 0;
+  color: var(--navy-900);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+}
+
+.newsletter-panel p {
+  color: var(--muted);
+}
+
+.print-page {
+  background: #eef2f5;
+}
+
+.print-container {
+  width: min(calc(100% - 32px), 900px);
+  margin: 32px auto;
+  padding: 48px;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.print-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 28px;
+  border-bottom: 2px solid var(--navy-900);
+}
+
+.print-header h1 {
+  color: var(--navy-900);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1;
+}
+
+.print-note,
+.article-disclaimer {
+  margin: 26px 0;
+  padding: 18px;
+  border-left: 4px solid var(--gold-500);
+  background: var(--blue-50);
+  color: var(--muted);
+}
+
+.checklist-section {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.checklist-section h2 {
+  color: var(--navy-900);
+  font-size: 1.35rem;
+}
+
+.checklist {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.checklist label {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.checklist input {
+  width: 17px;
+  height: 17px;
+  margin-top: 4px;
+}
+
+.print-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 28px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.article-page {
+  min-height: 100vh;
+  padding: 50px 0;
+  background: var(--blue-50);
+}
+
+.article-container {
+  width: min(calc(100% - 32px), 820px);
+  margin: 0 auto;
+  padding: 48px;
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.article-back {
+  color: var(--navy-800);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-container h1 {
+  color: var(--navy-900);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.02;
+}
+
+.article-deck {
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 24px 0 34px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.article-body {
+  font-size: 1.03rem;
+}
+
+.article-body h2 {
+  margin-top: 34px;
+  color: var(--navy-900);
+}
+
+@media (max-width: 900px) {
+  .resource-hero-grid,
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 680px) {
+  .print-container,
+  .article-container {
+    width: min(calc(100% - 20px), 900px);
+    padding: 26px;
+  }
+
+  .print-header,
+  .print-footer,
+  .article-meta {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .no-print,
+  .site-header,
+  .footer {
+    display: none !important;
+  }
+
+  body,
+  .print-page {
+    background: #fff !important;
+  }
+
+  .print-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .checklist-section {
+    break-inside: avoid;
+  }
+}
+
+
+.resource-heading-actions {
+  display: grid;
+  gap: 16px;
+  justify-items: start;
+}
+
+.resource-heading-actions p {
+  margin: 0;
+  color: var(--muted);
+}
