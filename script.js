@@ -104,3 +104,9 @@ if (contactForm && formStatus) {
     }
   });
 }
+
+const knowledgeSearch=document.querySelector("#knowledge-search");
+const knowledgeCards=[...document.querySelectorAll(".knowledge-card")];
+const filterButtons=[...document.querySelectorAll(".filter-button")];
+const knowledgeResults=document.querySelector("#knowledge-results");
+if(knowledgeSearch&&knowledgeCards.length){let activeFilter="all";const update=()=>{const q=knowledgeSearch.value.trim().toLowerCase();let n=0;knowledgeCards.forEach(card=>{const show=(!q||card.dataset.search.includes(q))&&(activeFilter==="all"||card.dataset.category===activeFilter);card.hidden=!show;if(show)n++;});if(knowledgeResults)knowledgeResults.textContent=`${n} guide${n===1?"":"s"} found.`};knowledgeSearch.addEventListener("input",update);filterButtons.forEach(button=>button.addEventListener("click",()=>{activeFilter=button.dataset.filter;filterButtons.forEach(x=>x.classList.toggle("active",x===button));update()}));update();}

@@ -1,17 +1,17 @@
-CHRIS DYKSTRA WEBSITE — VERSION 6
+VERSION 7 — KNOWLEDGE CENTER
 
 Adds:
-- SEO-focused homepage
-- Who I Help section
-- Dedicated service pages
-- FAQ Center with structured data
-- Improved internal links
+- Searchable Knowledge Center
+- Category filters
+- Five cornerstone tax guides
+- Article structured data
+- Homepage Knowledge Center link and call-to-action
 - Updated sitemap
-- Existing Formspree form, legal pages, resources, LinkedIn, résumé, and unaltered EA logo
+- Learning tracks for future Tax Tip Tuesday, IRS updates, and teaching resources
 
 Install:
 1. Back up the repository.
 2. Copy every file into the repository root.
-3. Replace existing files when prompted.
-4. Test index.html, all service pages, FAQ, resources, and the contact form.
-5. Commit and push through GitHub Desktop.
+3. Replace existing files.
+4. Test knowledge-center.html, search, filters, article links, mobile navigation, and the contact form.
+5. Commit and push with GitHub Desktop.
